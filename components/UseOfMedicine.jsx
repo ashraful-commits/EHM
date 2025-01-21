@@ -1235,7 +1235,7 @@ const UseOfMedicine = () => {
 
       {/* Display Results */}
       {results.length > 0 ? (
-        <ul className="mt-4 w-80 bg-white shadow-md rounded-md p-4">
+        <ul className="mt-4 w-80 bg-white shadow-md rounded-md p-4 min-h-[500px] max-h-[300px] overflow-y-scroll">
           {results.map((item, index) => (
             <li
               key={index}
