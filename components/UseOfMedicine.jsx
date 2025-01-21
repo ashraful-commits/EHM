@@ -947,6 +947,77 @@ const UseOfMedicine = () => {
         "দুর্গন্ধ আবিযুক্ত কাশি"
       ]
       ,medicine:"P2"},
+      {disease:[
+        "হুপিংকাশি (Whooping Cough)",
+        "শুষ্ক কাশি (Dry Cough)",
+        "স্নায়বিক কাশি (Nervous Cough)",
+        "শুষ্ক শ্লেষ্মাজনিত কাশি (Dry Mucus-Induced Cough)",
+        "ফুসফুস প্রদাহ (Pneumonitis)",
+        "ব্রঙ্কো-নিউমোনিয়া (Bronchopneumonia)",
+        "অতিস্রাবী সর্দি (Excessive Cold)",
+        "হাপানী (Asthma)",
+        "পুরাতন কাশি (Chronic Cough)",
+        "পুরাতন হুপিংকাশি (Old Whooping Cough)",
+        "পীড়াচ্ছন্ন অবস্থায় প্রলাপ (Delirium in Distressed Condition)",
+        "বক্ষোপীড়াগ্রস্ত রোগী (Chest-Distressed Patients)",
+        "গুটিল গ্রন্থি (Tubercular Glands)",
+        "কণ্ঠনালীর ক্ষয় রোগ (Laryngeal Tuberculosis)",
+        "ফুসফুসীয় ক্ষয়রোগ (Phthisis Pulmonum)",
+        "পাকস্থলীর উত্তেজনা বশত: কাশির প্রকোপ (Gastric Irritation-Induced Cough)",
+        "বমন (Vomiting)",
+        "প্রচুর কফ নিঃসারণ (Excessive Mucus Discharge)"
+      ]
+      ,medicine:"P3"},{disease:[
+        "শ্বাস-সংস্থানের স্নায়বিক দুর্বলতা (Nervous Weakness of the Respiratory System)",
+        "বৃদ্ধ রোগীদের শ্বাসকষ্ট (Breathing Difficulty in Elderly Patients)",
+        "ধূম্রপায়ী রোগীদের শ্বাসকষ্ট (Breathing Difficulty in Smokers)",
+        "অতি বক্তা এবং গায়কদের শ্বাসকষ্ট (Breathing Difficulty in Public Speakers and Singers)",
+        "শ্বাসকষ্ট (Breathlessness)",
+        "স্বরবিলোপ (Voice Loss)",
+        "বায়ুনলী শ্লেষ্মা (Mucus in the Bronchi)",
+        "কণ্ঠনালী শ্লেষ্মা (Mucus in the Larynx)",
+        "শ্বাসকষ্টজনিত শ্লেষ্মা সঞ্চয় (Mucus Accumulation in Breathlessness)",
+        "হুপিং কাশি (Whooping Cough)",
+        "স্নায়বিক কাশি (Nervous Cough)"
+      ]
+      ,medicine:"P4"},
+      {disease:[
+        "ক্রিমি (Worms)",
+        "ব্যাকটেরিয়া সংক্রমণ (Bacterial infections)",
+        "ভাইরাস সংক্রমণ (Viral infections)",
+        "মলদ্বারের প্রদাহ (Rectal inflammation)",
+        "কোষ্ঠকাঠিন্য (Constipation)",
+        "আমাশয় (Dysentery)",
+        "হুপিংকাশি (Whooping Cough)",
+        "অজীর্ণ (Indigestion)",
+        "উন্মাদনা (Delirium)",
+        "বায়ুনলীর প্রদাহ (Bronchitis)",
+        "উদরের আকুঞ্চন (Abdominal distension)",
+        "শূল (Abdominal pain)",
+        "ফিতা ক্রিমি (Tape worms)",
+        "বর্তুলাকার ক্রিমি (Round worms)",
+        "হুক ক্রিমি (Hook worms)",
+        "ফিলারিয়া (Filaria)",
+        "পিরিয়ডিক রোগ (Periodic diseases)",
+        "স্নায়ু-স্থাপক (Nervine conditions)"
+      ]
+      ,medicine:"Ver1"},{disease:[
+        "ক্রিমি (Worms)",
+        "ব্যাকটেরিয়া সংক্রমণ (Bacterial infections)",
+        "ভাইরাস সংক্রমণ (Viral infections)",
+        "গ্যাসট্রালজিয়া (Gastralgia)",
+        "হৃদয় বসাদ (Heart failure)",
+        "শোথ (Edema)",
+        "মাথাব্যথা (Headache)",
+        "শিশুদের ক্রিমি (Worms in children)",
+        "মেন্টাল, স্নায়ু ও শারীরিক ক্রিমি উপসর্গ (Mental, nervous, and physical symptoms caused by worms)",
+        "ক্রিমি সংক্রমণ (Helminthiasis)",
+        "অবস্থাপন (Indigestion)",
+        "গ্লাইডন (Gliden disease)",
+        "ক্রাস রোগ (Cras disease)",
+        "এন. এল. সিনহা রোগ (N.L. Sinha's disease)"
+      ]
+      ,medicine:"Ver2"},
       {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
       {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
       {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
