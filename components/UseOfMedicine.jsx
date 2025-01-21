@@ -455,8 +455,61 @@ const UseOfMedicine = () => {
         "পেশী এবং অস্থিসন্ধিতে ক্যালসিয়াম সঞ্চয় (Calcium deposits in muscles and joints)"
     ]
     ,medicine:"S6"},
-    {disease:"",medicine:"A2"},
-      {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
+    {disease:[
+      "জ্বর", // Fever
+      "ম্যালেরিয়া", // Malaria
+      "টাইফয়েড", // Typhoid
+      "টাইফাস", // Typhus
+      "শ্বাসকষ্ট", // Breathing Difficulty
+      "অ্যাজমা", // Asthma
+      "কাশি", // Cough
+      "পেটের গোলমাল", // Indigestion
+      "অজীর্ণ", // Dyspepsia
+      "বমন", // Vomiting
+      "ইনফ্লুয়েঞ্জা", // Influenza
+      "হিস্টিরিয়া", // Hysteria
+      "অ্যাপেন্ডিসাইটিস", // Appendicitis
+      "মৃগী", // Epilepsy
+      "বিহুচিকা", // Syncope
+      "শ্বেতাতিমার", // Leukemia
+      "ব্রঙ্কাইটিস", // Bronchitis
+      "ফ্লু", // Flu
+      "ধূমপানজনিত অসুখ", // Smoking-Related Illness
+      "রক্তস্বল্পতা", // Anemia
+      "দৃষ্টিহীনতা", // Blindness
+      "গলগাল করা" // Sore Throat
+    ],medicine:"S10"},
+      {disease:[
+        "ক্রোফোলোসো–১১",
+        "এন্টি-ম্যাল-ডি-ম্যার",
+        "বমনোদ্রেক",
+        "গর্ভাবস্থার বমন",
+        "পাচনতন্ত্রের গোলযোগ",
+        "পূতাতন গ্যাস্টেলজিয়া",
+        "হিক্কা",
+        "গ্যাস্ট্রিক অসুস্থতা",
+        "শ্বাসকষ্ট",
+        "অ্যাথসমা",
+        "ডাইজেস্টিভ ডিসঅর্ডার",
+        "নিকোটিনজনিত পাচনতন্ত্র গোলযোগ"
+      ]
+      ,medicine:"S11"},{disease:[
+        "স্ট্রোফোলোসো-১২",
+        "এন্টি-ম্যাল-ডি-ম্যার",
+        "নেত্র বিকার",
+        "চোখ ওঠা (Conjunctivitis)",
+        "ছানি",
+        "ঝাপা-দৃষ্টি",
+        "দ্বিত্বদর্শন (Diplopia)",
+        "চক্ষু প্রদাহ (Iritis)",
+        "অচ্ছোদ পটলে আঘাত",
+        "গ্লুকোমা",
+        "নেক্রোসিস",
+        "শৈত্য ঘটিত চোখ ওঠা",
+        "চক্ষুর কণী নিক",
+        "অবিশ্রান্ত অশ্রু প্রবাহ"
+      ]
+      ,medicine:"s12"},
       {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
       {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
       {disease:"",medicine:"A2"},{disease:"",medicine:"A2"},
