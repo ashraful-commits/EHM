@@ -1288,6 +1288,7 @@ const UseOfMedicine = () => {
 
   return (
     <div className="w-screen h-screen flex flex-col gap-4 justify-center items-center bg-gray-100 p-4">
+      
       <h1 className="text-2xl font-bold text-red-500">মেডিসিন সার্চ করুন </h1>
 
       {/* Input Field for Search */}
