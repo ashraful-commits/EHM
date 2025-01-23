@@ -7,150 +7,157 @@ const UseOfMedicine = () => {
 
   // Sample data with disease names and their associated medicines
   const data = [
-    { disease: ["প্রদাহ (Amygdalitis)",
-  "বক্ষস্থলের বেদনা (Angina Pectoris)",
-  "রক্ত প্রবাহের কারণে মৃগী",
-  "ধমনীর রোগ",
-  "ধমনীতে রক্ত সঞ্চয়",
-  "মহাধমনীর প্রদাহ (Inflammation of the thoracic or abdominal)",
-  "রক্তসঞ্চয় জনিত হাঁপানী",
-  "মূত্রাশয়ের রোগ",
-  "ব্রঙ্কাইটিস্",
-  "কর্কট রোগ (ক্যানসেরাসোর সাথে)",
-  "হৃদয়-প্রদাহ (Carditis)",
-  "রক্তাল্পতা (এস-১ এর সঙ্গে)",
-  "ক্ষয় রোগ (পি-২ এর সঙ্গে)",
-  "রক্ত সঞ্চয় জনিত বধিরতা",
-  "মূত্রকষ্ট",
-  "রক্তাতিসার (এস-১ এর সঙ্গে)",
-  "হৃদয়ের অন্তরীয় প্রদাহ (Endocarditis)",
-  "অস্ত্র প্রদাহ (Enteritis)",
-  "তীব্র প্রদাহ যুক্তজ্বর (এফ এর সঙ্গে)",
-  "কীটানু জনিত ছত্রাক (Fungus)",
-  "আমাশয়ের প্রদাহ (Gastritis)",
-  "রক্ত সঞ্চয় জনিত শিরপীড়া",
-  "রক্তস্রাব (মুখ, মল, মূত্র ও গর্ভাশয় অথবা ক্ষত থেকে)",
-  "হৃদরোগ",
-  "ধমনী-স্ফীতি",
-  "শুষ্করোগ (Atropy)",
-  "হৃদরোগ জনিত শোথ কোন অঙ্গের বৃদ্ধি (Hypertrophy)",
-  "হৃদস্পন্দন",
-  "হৃদয়ের বহিরাঙ্গে প্রদাহ (Pericarditis)",
-  "হার্পস",
-  "হৃদয়কোষ্ঠের রোগ (Valvular Disease)",
-  "অণ্ডস্ফীতি",
-  "বক্ষস্থলে জল সঞ্চয় (Hydrothrox)",
-  "বক্ষস্থলের বহিরাঙ্গে জল সঞ্চয় (Hydro-Pericarditis)",
-  "স্বরযন্ত্রের প্রদাহ",
-  "ফুসফুসে রক্ত সঞ্চয়",
-  "ফুসফুস প্রদাহ",
-  "টনসিল প্রদাহ",
-  "গণ্ডমালা",
-  "চর্মরোগ (এস-৫ এর সঙ্গে)",
-  "আমাশয়-ক্ষত",
-  "আন্ত্রিক ক্ষত",
-  "ক্ষত",
-  "শিরাঙ্কীতি অথবা শিরার বিশৃংখলা",
-  "শিরঘূর্ণন"], medicine: "A3" },
-    { disease: ["হৃদশূল",
-  "হাপানী",
-  "মস্তিস্কপীড়া",
-  "কষ্টাৰ (Dysmenorrhoea)",
-  "শীতল বা নির্দেশষ অর্বুদ",
-  "গ্রন্থির কাঠিন্য",
-  "ত্বক-পীড়া",
-  "দন্তক্ষয়",
-  "আমাশরিক দুর্বলতা",
-  "জ্বর (ফেবরিফ্যুগোর সাথে)",
-  "যৌন-অক্ষমতা (Sexual debility)",
-  "গ্রন্থির বিবর্ধন",
-  "গলগণ্ড (Goiter)",
-  "বাত (Gout)",
-  "মানসিক রোগ (Mania)",
-  "অর্শ ও রক্তার্শ (Haemorrhoids)",
-  "শিরপীড়া",
-  "শীত-জ্বর (ফেবরিফ্যুগো সহ)",
-  "সবিরাম জ্বর",
-  "বুক-রোগ (Kidney disease)",
-  "প্রদর (Leucorrhoea)",
-  "শিশুদের লসিকা রোগ",
-  "স্মরণ শক্তির দুর্বলতা",
-  "মাংস পেশীর দুর্বলতা",
-  "পদতলে অভিধর্ম",
-  "পলিপাস (C-4 এর সাথে)",
-  "কন্দর্প গ্রন্থির রসক্ষরণ (Flow of Prostate fluid)",
-  "রক্তাল্পতা",
-  "রক্তাল্প রোগিনীর শ্বেত প্রদর",
-  "আক্ষেপ (Convulsions)",
-  "স্কোফোলোসে",
-  "সেণ্ট ভিটাস, হিস, টিরিয়া মুর্গী (Epilepsy)",
-  "রক্ত বিকৃতির কারণে চর্মরোগ",
-  "কীট পতঙ্গ এবং মশা মাছির দংশন",
-  "রক্ত বিষাক্ততা হেতু জ্বর (Putrid fever, Septic poisoning, Pyaemia, Gangrene, etc)",
-  "স্মৃতিকা জ্বর (Puerperal Fever)",
-  "অম্ল",
-  "অম্ল-উদগার",
-  "শ্বাসকষ্ট",
-  "রাতব্যাধি",
-  "অর্শ",
-  "কর্ণমূল প্রদাহ",
-  "চক্ষু-মুদ্রিত অবস্থার পদ-চালনায় অক্ষমতা",
-  "বলবর্ধক (Tonic)",
-  "অভিসার",
-  "ফোঁড়া",
-  "বায়ুশূল",
-  "দুর্বলতা",
-  "যৌন দুর্বলতা",
-  "পেশীবাত",
-  "পেশীক্ষয় (Atrophy)"], medicine: "L1" },
-  {disease:[ "সন্ন্যাস রোগ (Apoplexy - Idiopathic or Traumatic with effusion of blood)",
-    "হাঁপানী (Asthma Congestive)",
-    "রক্তাল্পতা (C-I এর সাথে)",
-    "ফোঁড়া",
-    "মস্তিষ্কে রক্ত সঞ্চয়",
-    "রক্ত-সংবহনে শৈথিল্য (C-I এর সাথে)",
-    "ঋতুশূল",
-    "রক্ত সঞ্চয়",
-    "কাশি (আক্ষেপিক)",
-    "শোথ (Dropsy Cardiac)",
-    "রক্তামাশয়",
-    "চক্ষুর কনীনিকায় রক্ত সঞ্চয় (Ecchymosis)",
-    "মস্তিষ্কের আভ্যন্তর প্রদাহ (Encephalitis)",
-    "মৃগী (রক্ত-সঞ্চালনের শৈথিল্য হেতু)",
-    "চক্ষুর পাতায় প্রদাহ (FI-এর সাথে)",
-    "জননেন্দ্রিয়ের প্রদাহ",
-    "চক্ষুর মাংসপেশীর আক্ষেপ",
-    "মুর্ছা",
-    "জ্বর",
-    "প্রদাহ",
-    "বাতব্যাধির স্ফীতি",
-    "রক্ত-বমন",
-    "রক্ত-মূত্র",
-    "রক্ত-কাশ (Haemoptysis)",
-    "রক্তস্রাব",
-    "রক্তার্শ",
-    "রক্তমল (Melaena)",
-    "মস্তিষ্ক ঝিল্লির প্রদাহ (Meningitis - Acute or Chronic)",
-    "অবসাদ",
-    "স্বল্পাতব (১ম শক্তি-ক্যানসেরাসো)",
-    "তালু গ্রন্থির প্রদাহ (Tonsilitis)",
-    "গল-ক্ষত",
-    "মস্তিষ্ক প্রদাহ",
-    "স্নায়ু-শূল",
-    "পক্ষাঘাত",
-    "ফুসফুসের আবরণের প্রদাহ",
-    "শিরার প্রদাহ (Phlebitis)",
-    "পরিসি অতি-আতব (উচ্চ ক্রম-শক্তি)",
-    "মানসিক ব্যাধি",
-    "বাতিক (Monomania)",
-    "রক্ত সঞ্চয় জনিত অথবা প্রদাহিক পদশোথ (Pedal adema)",
-    "রক্ত-মিশ্রিত শ্বেত-স্ফীতি (White Swelling)",
-    "ক্ষত (Wounds)",
-    "থুথু",
-    "অচৈতন্য (Syncope)",
-    "সর্দিগর্মি",
-    "অণ্ড-রজ্জু-স্ফীতি (Varicocele)",
-    "শিরঘূর্ণন"],medicine:"A1"},{disease:[
+    {
+      disease: ["প্রদাহ (Amygdalitis)",
+        "বক্ষস্থলের বেদনা (Angina Pectoris)",
+        "রক্ত প্রবাহের কারণে মৃগী",
+        "ধমনীর রোগ",
+        "ধমনীতে রক্ত সঞ্চয়",
+        "মহাধমনীর প্রদাহ (Inflammation of the thoracic or abdominal)",
+        "রক্তসঞ্চয় জনিত হাঁপানী",
+        "মূত্রাশয়ের রোগ",
+        "ব্রঙ্কাইটিস্",
+        "কর্কট রোগ (ক্যানসেরাসোর সাথে)",
+        "হৃদয়-প্রদাহ (Carditis)",
+        "রক্তাল্পতা (এস-১ এর সঙ্গে)",
+        "ক্ষয় রোগ (পি-২ এর সঙ্গে)",
+        "রক্ত সঞ্চয় জনিত বধিরতা",
+        "মূত্রকষ্ট",
+        "রক্তাতিসার (এস-১ এর সঙ্গে)",
+        "হৃদয়ের অন্তরীয় প্রদাহ (Endocarditis)",
+        "অস্ত্র প্রদাহ (Enteritis)",
+        "তীব্র প্রদাহ যুক্তজ্বর (এফ এর সঙ্গে)",
+        "কীটানু জনিত ছত্রাক (Fungus)",
+        "আমাশয়ের প্রদাহ (Gastritis)",
+        "রক্ত সঞ্চয় জনিত শিরপীড়া",
+        "রক্তস্রাব (মুখ, মল, মূত্র ও গর্ভাশয় অথবা ক্ষত থেকে)",
+        "হৃদরোগ",
+        "ধমনী-স্ফীতি",
+        "শুষ্করোগ (Atropy)",
+        "হৃদরোগ জনিত শোথ কোন অঙ্গের বৃদ্ধি (Hypertrophy)",
+        "হৃদস্পন্দন",
+        "হৃদয়ের বহিরাঙ্গে প্রদাহ (Pericarditis)",
+        "হার্পস",
+        "হৃদয়কোষ্ঠের রোগ (Valvular Disease)",
+        "অণ্ডস্ফীতি",
+        "বক্ষস্থলে জল সঞ্চয় (Hydrothrox)",
+        "বক্ষস্থলের বহিরাঙ্গে জল সঞ্চয় (Hydro-Pericarditis)",
+        "স্বরযন্ত্রের প্রদাহ",
+        "ফুসফুসে রক্ত সঞ্চয়",
+        "ফুসফুস প্রদাহ",
+        "টনসিল প্রদাহ",
+        "গণ্ডমালা",
+        "চর্মরোগ (এস-৫ এর সঙ্গে)",
+        "আমাশয়-ক্ষত",
+        "আন্ত্রিক ক্ষত",
+        "ক্ষত",
+        "শিরাঙ্কীতি অথবা শিরার বিশৃংখলা",
+        "শিরঘূর্ণন"], medicine: "A3"
+    },
+    {
+      disease: ["হৃদশূল",
+        "হাপানী",
+        "মস্তিস্কপীড়া",
+        "কষ্টাৰ (Dysmenorrhoea)",
+        "শীতল বা নির্দেশষ অর্বুদ",
+        "গ্রন্থির কাঠিন্য",
+        "ত্বক-পীড়া",
+        "দন্তক্ষয়",
+        "আমাশরিক দুর্বলতা",
+        "জ্বর (ফেবরিফ্যুগোর সাথে)",
+        "যৌন-অক্ষমতা (Sexual debility)",
+        "গ্রন্থির বিবর্ধন",
+        "গলগণ্ড (Goiter)",
+        "বাত (Gout)",
+        "মানসিক রোগ (Mania)",
+        "অর্শ ও রক্তার্শ (Haemorrhoids)",
+        "শিরপীড়া",
+        "শীত-জ্বর (ফেবরিফ্যুগো সহ)",
+        "সবিরাম জ্বর",
+        "বুক-রোগ (Kidney disease)",
+        "প্রদর (Leucorrhoea)",
+        "শিশুদের লসিকা রোগ",
+        "স্মরণ শক্তির দুর্বলতা",
+        "মাংস পেশীর দুর্বলতা",
+        "পদতলে অভিধর্ম",
+        "পলিপাস (C-4 এর সাথে)",
+        "কন্দর্প গ্রন্থির রসক্ষরণ (Flow of Prostate fluid)",
+        "রক্তাল্পতা",
+        "রক্তাল্প রোগিনীর শ্বেত প্রদর",
+        "আক্ষেপ (Convulsions)",
+        "স্কোফোলোসে",
+        "সেণ্ট ভিটাস, হিস, টিরিয়া মুর্গী (Epilepsy)",
+        "রক্ত বিকৃতির কারণে চর্মরোগ",
+        "কীট পতঙ্গ এবং মশা মাছির দংশন",
+        "রক্ত বিষাক্ততা হেতু জ্বর (Putrid fever, Septic poisoning, Pyaemia, Gangrene, etc)",
+        "স্মৃতিকা জ্বর (Puerperal Fever)",
+        "অম্ল",
+        "অম্ল-উদগার",
+        "শ্বাসকষ্ট",
+        "রাতব্যাধি",
+        "অর্শ",
+        "কর্ণমূল প্রদাহ",
+        "চক্ষু-মুদ্রিত অবস্থার পদ-চালনায় অক্ষমতা",
+        "বলবর্ধক (Tonic)",
+        "অভিসার",
+        "ফোঁড়া",
+        "বায়ুশূল",
+        "দুর্বলতা",
+        "যৌন দুর্বলতা",
+        "পেশীবাত",
+        "পেশীক্ষয় (Atrophy)"], medicine: "L1"
+    },
+    {
+      disease: ["সন্ন্যাস রোগ (Apoplexy - Idiopathic or Traumatic with effusion of blood)",
+        "হাঁপানী (Asthma Congestive)",
+        "রক্তাল্পতা (C-I এর সাথে)",
+        "ফোঁড়া",
+        "মস্তিষ্কে রক্ত সঞ্চয়",
+        "রক্ত-সংবহনে শৈথিল্য (C-I এর সাথে)",
+        "ঋতুশূল",
+        "রক্ত সঞ্চয়",
+        "কাশি (আক্ষেপিক)",
+        "শোথ (Dropsy Cardiac)",
+        "রক্তামাশয়",
+        "চক্ষুর কনীনিকায় রক্ত সঞ্চয় (Ecchymosis)",
+        "মস্তিষ্কের আভ্যন্তর প্রদাহ (Encephalitis)",
+        "মৃগী (রক্ত-সঞ্চালনের শৈথিল্য হেতু)",
+        "চক্ষুর পাতায় প্রদাহ (FI-এর সাথে)",
+        "জননেন্দ্রিয়ের প্রদাহ",
+        "চক্ষুর মাংসপেশীর আক্ষেপ",
+        "মুর্ছা",
+        "জ্বর",
+        "প্রদাহ",
+        "বাতব্যাধির স্ফীতি",
+        "রক্ত-বমন",
+        "রক্ত-মূত্র",
+        "রক্ত-কাশ (Haemoptysis)",
+        "রক্তস্রাব",
+        "রক্তার্শ",
+        "রক্তমল (Melaena)",
+        "মস্তিষ্ক ঝিল্লির প্রদাহ (Meningitis - Acute or Chronic)",
+        "অবসাদ",
+        "স্বল্পাতব (১ম শক্তি-ক্যানসেরাসো)",
+        "তালু গ্রন্থির প্রদাহ (Tonsilitis)",
+        "গল-ক্ষত",
+        "মস্তিষ্ক প্রদাহ",
+        "স্নায়ু-শূল",
+        "পক্ষাঘাত",
+        "ফুসফুসের আবরণের প্রদাহ",
+        "শিরার প্রদাহ (Phlebitis)",
+        "পরিসি অতি-আতব (উচ্চ ক্রম-শক্তি)",
+        "মানসিক ব্যাধি",
+        "বাতিক (Monomania)",
+        "রক্ত সঞ্চয় জনিত অথবা প্রদাহিক পদশোথ (Pedal adema)",
+        "রক্ত-মিশ্রিত শ্বেত-স্ফীতি (White Swelling)",
+        "ক্ষত (Wounds)",
+        "থুথু",
+        "অচৈতন্য (Syncope)",
+        "সর্দিগর্মি",
+        "অণ্ড-রজ্জু-স্ফীতি (Varicocele)",
+        "শিরঘূর্ণন"], medicine: "A1"
+    }, {
+      disease: [
         "রাহ্যিক প্রয়োগে ব্যবহৃত রোগ",
         "হৃদয় এবং শিরা সমূহের রক্ত সঞ্চালনের বিশৃংখলা",
         "ধমনীর স্ফীতি",
@@ -185,8 +192,10 @@ const UseOfMedicine = () => {
         "অওরজ্জুর স্ফীতি",
         "রক্তাধিক্য হেতু শিরঘূর্ণন",
         "ধমনীতে রক্ত স্তম্ভন হেতু থ স্বশিস (Thrombosis)"
-      ],medicine:"A2"},
-      {disease:[
+      ], medicine: "A2"
+    },
+    {
+      disease: [
         "মূত্রে অন্তলাল (Albuminuria)",
         "চোঁখের তরুণ ছানি",
         "কষ্টৰ্তির (Amenorrhoea)",
@@ -330,8 +339,10 @@ const UseOfMedicine = () => {
         "বিবমিষা",
         "বমন",
         "গর্ভকালীন বিবহিবা ও বমন"
-      ],medicine:"S1"},
-      {disease:[
+      ], medicine: "S1"
+    },
+    {
+      disease: [
         "অম্ল মূত্রাশয়ের পাথরী",
         "পিত্তা শয়ের পাথরী",
         "মূত্রাশয়ের জ্বলন ও প্রদাহ",
@@ -370,8 +381,10 @@ const UseOfMedicine = () => {
         "বৃক্কপাথরী (Renal Stone)",
         "শ্বেত প্রদর",
         "মূত্র সংস্থানের ব্যাধি"
-      ],medicine:"S2"},
-      {disease:[
+      ], medicine: "S2"
+    },
+    {
+      disease: [
         "অস্ত্রের জলীয় স্রাব বৃদ্ধি",
         "কোষ্ঠ",
         "অনাবশ্যক জলীয় স্রাব (দেহের যে কোন অংশ থেকে)",
@@ -398,8 +411,10 @@ const UseOfMedicine = () => {
         "ডিম্ব-গ্রন্থির রোগ",
         "গ্রন্থির স্ফীতি (Arthritic)",
         "অতি মস্তপান হেতু অথবা অতি অধ্যয়ন জনিত শিরপীড়া"
-      ],medicine:"S3"},
-      {disease:[
+      ], medicine: "S3"
+    },
+    {
+      disease: [
         "নেত্ররোগ",
         "ফোড়া",
         "বৃক্ক পাথরী",
@@ -431,9 +446,11 @@ const UseOfMedicine = () => {
         "জ্বর (Typhoid fever with febrifugo)",
         "বমন",
         "বিব মিধা"
-    ]
-    ,medicine:"S5"},
-      {disease:[
+      ]
+      , medicine: "S5"
+    },
+    {
+      disease: [
         "কিডনি ব্যথা (Tenderness in kidney region)",
         "বৃক্ক থেকে প্রসারিত ব্যথা (Pains extending from kidneys)",
         "স্বল্পমূত্র, কঠিন মূত্র (Scanty, thick urine)",
@@ -453,33 +470,37 @@ const UseOfMedicine = () => {
         "ধাতুস্রাবের সমস্যা (Menstrual disorders)",
         "মধুমূত্র, বহুমূত্র (Diabetes and polyuria)",
         "পেশী এবং অস্থিসন্ধিতে ক্যালসিয়াম সঞ্চয় (Calcium deposits in muscles and joints)"
-    ]
-    ,medicine:"S6"},
-    {disease:[
-      "জ্বর", // Fever
-      "ম্যালেরিয়া", // Malaria
-      "টাইফয়েড", // Typhoid
-      "টাইফাস", // Typhus
-      "শ্বাসকষ্ট", // Breathing Difficulty
-      "অ্যাজমা", // Asthma
-      "কাশি", // Cough
-      "পেটের গোলমাল", // Indigestion
-      "অজীর্ণ", // Dyspepsia
-      "বমন", // Vomiting
-      "ইনফ্লুয়েঞ্জা", // Influenza
-      "হিস্টিরিয়া", // Hysteria
-      "অ্যাপেন্ডিসাইটিস", // Appendicitis
-      "মৃগী", // Epilepsy
-      "বিহুচিকা", // Syncope
-      "শ্বেতাতিমার", // Leukemia
-      "ব্রঙ্কাইটিস", // Bronchitis
-      "ফ্লু", // Flu
-      "ধূমপানজনিত অসুখ", // Smoking-Related Illness
-      "রক্তস্বল্পতা", // Anemia
-      "দৃষ্টিহীনতা", // Blindness
-      "গলগাল করা" // Sore Throat
-    ],medicine:"S10"},
-      {disease:[
+      ]
+      , medicine: "S6"
+    },
+    {
+      disease: [
+        "জ্বর", // Fever
+        "ম্যালেরিয়া", // Malaria
+        "টাইফয়েড", // Typhoid
+        "টাইফাস", // Typhus
+        "শ্বাসকষ্ট", // Breathing Difficulty
+        "অ্যাজমা", // Asthma
+        "কাশি", // Cough
+        "পেটের গোলমাল", // Indigestion
+        "অজীর্ণ", // Dyspepsia
+        "বমন", // Vomiting
+        "ইনফ্লুয়েঞ্জা", // Influenza
+        "হিস্টিরিয়া", // Hysteria
+        "অ্যাপেন্ডিসাইটিস", // Appendicitis
+        "মৃগী", // Epilepsy
+        "বিহুচিকা", // Syncope
+        "শ্বেতাতিমার", // Leukemia
+        "ব্রঙ্কাইটিস", // Bronchitis
+        "ফ্লু", // Flu
+        "ধূমপানজনিত অসুখ", // Smoking-Related Illness
+        "রক্তস্বল্পতা", // Anemia
+        "দৃষ্টিহীনতা", // Blindness
+        "গলগাল করা" // Sore Throat
+      ], medicine: "S10"
+    },
+    {
+      disease: [
         "ক্রোফোলোসো–১১",
         "এন্টি-ম্যাল-ডি-ম্যার",
         "বমনোদ্রেক",
@@ -493,7 +514,9 @@ const UseOfMedicine = () => {
         "ডাইজেস্টিভ ডিসঅর্ডার",
         "নিকোটিনজনিত পাচনতন্ত্র গোলযোগ"
       ]
-      ,medicine:"S11"},{disease:[
+      , medicine: "S11"
+    }, {
+      disease: [
         "স্ট্রোফোলোসো-১২",
         "এন্টি-ম্যাল-ডি-ম্যার",
         "নেত্র বিকার",
@@ -509,8 +532,10 @@ const UseOfMedicine = () => {
         "চক্ষুর কণী নিক",
         "অবিশ্রান্ত অশ্রু প্রবাহ"
       ]
-      ,medicine:"s12"},
-      {disease:[
+      , medicine: "s12"
+    },
+    {
+      disease: [
         "স্ক্রোফোলোসো",
         "স্ত্রী রোগ",
         "যৌনরোগ",
@@ -532,7 +557,9 @@ const UseOfMedicine = () => {
         "শুনে বেদনা",
         "অবক্ষয় ও ধ্বংসের সূচনা"
       ]
-      ,medicine:"C1"},{disease:[
+      , medicine: "C1"
+    }, {
+      disease: [
         "অস্ত্রে অর্বুদ ক্যানসার",
         "মুত্রাশয়ের ক্যানসার",
         "মুত্রাশয়ের পলিপাস",
@@ -559,8 +586,10 @@ const UseOfMedicine = () => {
         "শিশুদের মূত্র ত্যাগ কালীন ভীতি",
         "মূত্রনালীতে যন্ত্রণা",
         "অতি-তৃষ্ণা এবং অতিক্ষুধা থাকা সত্ত্বেও তৃষ্ণা ও ক্ষুধার নিবৃত্তি"
-      ],medicine:"C2"},
-      {disease:[
+      ], medicine: "C2"
+    },
+    {
+      disease: [
         "ক্যানসার",
         "ক্রোফুল দোষ",
         "মল মূত্রকারক",
@@ -587,7 +616,9 @@ const UseOfMedicine = () => {
         "মেরুপুচ্ছের বেদনা",
         "গলগণ্ড",
         "থাইরড গ্রন্থির বিক্রিয়া জনিত হৃদস্পন্দন"
-      ],medicine:"C3"},{disease:[
+      ], medicine: "C3"
+    }, {
+      disease: [
         "ক্ষত",
         "পৃষ্ঠ বেদনা (অতিরিক্ত যৌনতার কারণে)",
         "অস্থি ভঙ্গ",
@@ -634,8 +665,10 @@ const UseOfMedicine = () => {
         "অন্তেক্ষয় বা গুটিকা দোষ (Intestinal Tuberculosis)",
         "ঊরু অস্তির সার্কোমা",
         "সাইনোভাইটিস"
-      ],medicine:"C4"},
-      {disease:[
+      ], medicine: "C4"
+    },
+    {
+      disease: [
         "গ্রন্থির পীড়া",
         "বাত",
         "প্রাচীনবাত",
@@ -725,8 +758,10 @@ const UseOfMedicine = () => {
         "আঘাত মোচড় পতন",
         "শরীরাঙ্গের অতি-সংচাপ জনিত উপসর্গ নাশক",
         "কীট পতঙ্গ সূচালো বস্তুর বিদ্ধতা জনিত উপসর্গ প্রশমক"
-      ],medicine:"C5"},
-      {disease:[
+      ], medicine: "C5"
+    },
+    {
+      disease: [
         "বৃক্ক পাথী",
         "বৃক্কের বিভিন্ন বিশৃংখলা",
         "বৃক্ক ক্যানসার",
@@ -742,8 +777,10 @@ const UseOfMedicine = () => {
         "জীবনীশক্তির অভাব (Lack of vital force)",
         "আঘাতজনিত কাল শিরায় (ecchymosis)",
         "জরায়ুর অর্বুদ (Polypus) থেকে রক্তস্রাব"
-      ],medicine:"C10"},
-      {disease:[
+      ], medicine: "C10"
+    },
+    {
+      disease: [
         "যকৃত এবং প্লীহার বিবৃদ্ধি",
         "কার্যের বিঘ্নতা (যকৃত এবং প্লীহা)",
         "অম্ল-অজীর্ণ",
@@ -764,8 +801,10 @@ const UseOfMedicine = () => {
         "হেমোরয়েডসের প্রবণতা",
         "হাইপোগ্যাস্ট্রিক ব্যথা",
         "জন্ডিস"
-      ],medicine:"C10"},
-      {disease:[
+      ], medicine: "C10"
+    },
+    {
+      disease: [
         "ডিপথেরিয়া (Diphtheria)",
         "গলনালী স্ফীতি (Pharyngeal swelling)",
         "গলক্ষত (Throat ulceration)",
@@ -790,8 +829,10 @@ const UseOfMedicine = () => {
         "চির গলরোগ (Chronic throat disease)",
         "রক্তের বিকলতা এবং চর্মরোগ (Blood disorders and skin diseases)",
         "বৃহৎ-উদ্ভেদ, রক্তিমাভা যুক্ত উদ্ভেদ (Large, red-tinted swellings)"
-      ],medicine:"C13"},
-      {disease: [
+      ], medicine: "C13"
+    },
+    {
+      disease: [
         "আমাশরিক (Stomachic)",
         "ক্ষুধাবর্ধক (Appetizer)",
         "ক্যানসার নাশক (Anti-cancerous)",
@@ -810,7 +851,9 @@ const UseOfMedicine = () => {
         "কুচলাবীজ হোমিও (Nux vomica)",
         "নিম্ন ওষ্ঠের ক্ষত (Lower lip ulcerations)",
         "পলিক্রেষ্ট (Polycrest remedy)"
-      ],medicine:"C15"},{disease: [
+      ], medicine: "C15"
+    }, {
+      disease: [
         "ক্যানসেরাসো (Cancer)",
         "মূত্রাশয় (Bladder)",
         "বৃত্র প্রণালী (Urethra)",
@@ -832,8 +875,10 @@ const UseOfMedicine = () => {
         "শয্যামূত্র (Nocturnal enuresis)",
         "মূত্রে অগুলাল (Cloudy urine)",
         "সুপ্তিস্খলন (Involuntary urination during sleep)"
-      ],medicine:"C17"},
-      {disease:[
+      ], medicine: "C17"
+    },
+    {
+      disease: [
         "তীব্র রক্ষপীড়া (Acute Angina)",
         "শ্লৈষ্মিক ঝিল্লির পীড়া (Mucosal Disorders)",
         "সর্দি (Cold)",
@@ -870,8 +915,10 @@ const UseOfMedicine = () => {
         "স্নায়ুপ্রদাহ (Neuritis)",
         "স্নায়বিক বিশৃংখলা (Nervous Disorders)",
         "স্বরযন্ত্রের আক্ষেপ (Voice Disorders)"
-      ],medicine:"F1"},
-      {disease:[
+      ], medicine: "F1"
+    },
+    {
+      disease: [
         "প্রবল জ্বর (Severe Fever)",
         "ম্যালেরিয়া (Malaria)",
         "যকৃতের রোগ (Liver Disease)",
@@ -904,8 +951,10 @@ const UseOfMedicine = () => {
         "মলদ্বারে একজিমা (Eczema in Anus)",
         "হাতে একজিমা (Eczema on Hands)",
         "বর্ণ রঞ্জিত গোলাক্বতি একজিমা (Color-dyed Eczema)"
-      ],medicine:"F2"},
-      {disease:[
+      ], medicine: "F2"
+    },
+    {
+      disease: [
         "হাঁপানি",
         "নিউমোনিয়া",
         "ঘুংড়ী",
@@ -929,7 +978,9 @@ const UseOfMedicine = () => {
         "বায়ুনলীর প্রদাহ",
         "কণ্ঠনলুশ (Laryngitis)"
       ]
-      ,medicine:"P1"},{disease:[
+      , medicine: "P1"
+    }, {
+      disease: [
         "ফুসফুসের ক্ষয়রোগ (Tuberculosis)",
         "ফুসফুসে ক্যানসার",
         "গণ্ডমালা",
@@ -946,8 +997,10 @@ const UseOfMedicine = () => {
         "পুরাণো কাশি",
         "দুর্গন্ধ আবিযুক্ত কাশি"
       ]
-      ,medicine:"P2"},
-      {disease:[
+      , medicine: "P2"
+    },
+    {
+      disease: [
         "হুপিংকাশি (Whooping Cough)",
         "শুষ্ক কাশি (Dry Cough)",
         "স্নায়বিক কাশি (Nervous Cough)",
@@ -967,7 +1020,9 @@ const UseOfMedicine = () => {
         "বমন (Vomiting)",
         "প্রচুর কফ নিঃসারণ (Excessive Mucus Discharge)"
       ]
-      ,medicine:"P3"},{disease:[
+      , medicine: "P3"
+    }, {
+      disease: [
         "শ্বাস-সংস্থানের স্নায়বিক দুর্বলতা (Nervous Weakness of the Respiratory System)",
         "বৃদ্ধ রোগীদের শ্বাসকষ্ট (Breathing Difficulty in Elderly Patients)",
         "ধূম্রপায়ী রোগীদের শ্বাসকষ্ট (Breathing Difficulty in Smokers)",
@@ -980,8 +1035,10 @@ const UseOfMedicine = () => {
         "হুপিং কাশি (Whooping Cough)",
         "স্নায়বিক কাশি (Nervous Cough)"
       ]
-      ,medicine:"P4"},
-      {disease:[
+      , medicine: "P4"
+    },
+    {
+      disease: [
         "ক্রিমি (Worms)",
         "ব্যাকটেরিয়া সংক্রমণ (Bacterial infections)",
         "ভাইরাস সংক্রমণ (Viral infections)",
@@ -1001,7 +1058,9 @@ const UseOfMedicine = () => {
         "পিরিয়ডিক রোগ (Periodic diseases)",
         "স্নায়ু-স্থাপক (Nervine conditions)"
       ]
-      ,medicine:"Ver1"},{disease:[
+      , medicine: "Ver1"
+    }, {
+      disease: [
         "ক্রিমি (Worms)",
         "ব্যাকটেরিয়া সংক্রমণ (Bacterial infections)",
         "ভাইরাস সংক্রমণ (Viral infections)",
@@ -1017,8 +1076,10 @@ const UseOfMedicine = () => {
         "ক্রাস রোগ (Cras disease)",
         "এন. এল. সিনহা রোগ (N.L. Sinha's disease)"
       ]
-      ,medicine:"Ver2"},
-      {disease:[
+      , medicine: "Ver2"
+    },
+    {
+      disease: [
         "প্রথমিক উপদংশ",
         "গৌণ উপদংশ",
         "তৃতীয়াবস্থার উপদংশ",
@@ -1049,7 +1110,9 @@ const UseOfMedicine = () => {
         "উপদংশজ মূত্রমার্গ প্রদাহ",
         "যোনি প্রদাহ",
         "ক্ষয় রোগ"
-      ],medicine:"Ven"},{disease: [
+      ], medicine: "Ven"
+    }, {
+      disease: [
         "কোষ্ঠকাঠিন্য",
         "অজীর্ণতা",
         "রক্তামাশয় রোগ",
@@ -1057,8 +1120,10 @@ const UseOfMedicine = () => {
         "আযাতিসার",
         "অভিসার",
         "পীতবর্ণের অভিদাস্ত"
-      ],medicine:"S-Lass"},
-      {disease: [
+      ], medicine: "S-Lass"
+    },
+    {
+      disease: [
         "শিরঃপীড়া",
         "অর্ধ-শিরঃপীড়া",
         "কর্কট রোগ",
@@ -1096,7 +1161,9 @@ const UseOfMedicine = () => {
         "সূর্যাঘাত",
         "জ্বর",
         "মূর্ছা"
-      ],medicine:"WE"},{disease:[
+      ], medicine: "WE"
+    }, {
+      disease: [
         "রক্তস্রাব (Hemorrhage)",
         "অ্যানিমিয়া (Anaemia)",
         "শারীরিক দুর্বলতা ও অবসাদ (Physical debility and lassitude)",
@@ -1124,8 +1191,10 @@ const UseOfMedicine = () => {
         "মানসিক অবসাদ (Mental fatigue)",
         "কর্কট ক্ষত (Cancerous wounds)",
         "স্বল্প রজঃ (Scanty menstruation)"
-      ],medicine:"RE"},
-      {disease:[
+      ], medicine: "RE"
+    },
+    {
+      disease: [
         "ধনুষ্টংকার",
         "উদরশূল",
         "আক্ষেপ",
@@ -1154,7 +1223,9 @@ const UseOfMedicine = () => {
         "ত্বক রোগ",
         "কুষ্ঠরোগ",
         "স্নায়ুজনিত অবসাদ"
-      ],medicine:"BE"},{disease:[
+      ], medicine: "BE"
+    }, {
+      disease: [
         "পুঁজপূর্ণ ফোড়া",
         "পচনশীল ক্ষত",
         "কার্বাকল",
@@ -1173,8 +1244,10 @@ const UseOfMedicine = () => {
         "আঁচিল",
         "শ্লেষ্মাগুটি",
         "একজিমার দুর্গন্ধ স্রাব",
-      ],medicine:"A2"},
-      {disease:[
+      ], medicine: "A2"
+    },
+    {
+      disease: [
         "চর্মের কুশ্রী দাগ",
         "ত্বকের অমসৃণতা",
         "শুষ্ক চর্ম",
@@ -1192,8 +1265,9 @@ const UseOfMedicine = () => {
         "চুলকানি",
         "অগ্নিদাহ",
         "চক্ষু বৃত্তের কালো দাগ",
-      ],medicine:"Aqa Perla pelle"}
-      
+      ], medicine: "Aqa Perla pelle"
+    }
+
   ];
 
   // Search handler function
@@ -1235,25 +1309,25 @@ const UseOfMedicine = () => {
 
       {/* Display Results */}
       {results.length > 0 ? (
-  <ul className="mt-4 w-80 bg-white shadow-md rounded-md p-4 min-h-[500px] max-h-[300px] overflow-y-scroll">
-    {results.map((item, index) => (
-      <li
-        key={index}
-        className="border-b border-gray-200 py-2 last:border-b-0 text-gray-500"
-      >
-        <ul className="text-gray-500">
-          <strong className="text-red-500">রোগ:</strong>
-          {item.disease.map((disease, diseaseIndex) => (
-            <li key={diseaseIndex}>{diseaseIndex+1}.{disease}</li>
+        <ul className="mt-4 w-80 bg-white shadow-md rounded-md p-4 min-h-[500px] max-h-[300px] overflow-y-scroll">
+          {results.map((item, index) => (
+            <li
+              key={index}
+              className="border-b border-gray-200 py-2 last:border-b-0 text-gray-500"
+            >
+              <ul className="text-gray-500">
+                <strong className="text-red-500">রোগ:</strong>
+                {item.disease.map((disease, diseaseIndex) => (
+                  <li key={diseaseIndex}> <strong className="border w-auto h-auto p-1 inline-block my-2 rounded border-blue-500 bg-blue-500 text-white text-[10px]">{diseaseIndex + 1}</strong>.{disease}</li>
+                ))}
+              </ul>
+              <strong className="text-red-500">মেডিসিন:</strong> {item.medicine}
+            </li>
           ))}
         </ul>
-        <strong className="text-red-500">মেডিসিন:</strong> {item.medicine}
-      </li>
-    ))}
-  </ul>
-) : (
-  <p className="mt-4 text-red-500">কোন ফলাফল পাওয়া যায়নি।</p>
-)}
+      ) : (
+        <p className="mt-4 text-red-500">কোন ফলাফল পাওয়া যায়নি।</p>
+      )}
 
     </div>
   );
