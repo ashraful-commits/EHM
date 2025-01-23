@@ -1214,7 +1214,7 @@ const UseOfMedicine = () => {
 
   return (
     <div className="w-screen h-screen flex flex-col gap-4 justify-center items-center bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold text-red-500">মেডিসিন সার্চ</h1>
+      <h1 className="text-2xl font-bold text-red-500">মেডিসিন সার্চ করুন </h1>
 
       {/* Input Field for Search */}
       <input
@@ -1222,7 +1222,7 @@ const UseOfMedicine = () => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="রোগের নাম লিখুন"
-        className="border border-gray-300 rounded-md p-2 w-80 focus:outline-none text-red-500 focus:ring focus:ring-blue-300"
+        className="border border-gray-300 rounded-md p-2 w-80 focus:outline-none text-gray-500 focus:ring focus:ring-blue-300"
       />
 
       {/* Search Button */}
@@ -1235,20 +1235,26 @@ const UseOfMedicine = () => {
 
       {/* Display Results */}
       {results.length > 0 ? (
-        <ul className="mt-4 w-80 bg-white shadow-md rounded-md p-4 min-h-[500px] max-h-[300px] overflow-y-scroll">
-          {results.map((item, index) => (
-            <li
-              key={index}
-              className="border-b border-gray-200 py-2 last:border-b-0 text-red-500"
-            >
-              <strong className="text-red-500">রোগ:</strong> {item.disease.join(", ")} <br />
-              <strong className="text-red-500">মেডিসিন:</strong> {item.medicine}
-            </li>
+  <ul className="mt-4 w-80 bg-white shadow-md rounded-md p-4 min-h-[500px] max-h-[300px] overflow-y-scroll">
+    {results.map((item, index) => (
+      <li
+        key={index}
+        className="border-b border-gray-200 py-2 last:border-b-0 text-gray-500"
+      >
+        <ul className="text-gray-500">
+          <strong className="text-red-500">রোগ:</strong>
+          {item.disease.map((disease, diseaseIndex) => (
+            <li key={diseaseIndex}>{diseaseIndex+1}.{disease}</li>
           ))}
         </ul>
-      ) : (
-        <p className="mt-4 text-red-500">কোন ফলাফল পাওয়া যায়নি।</p>
-      )}
+        <strong className="text-red-500">মেডিসিন:</strong> {item.medicine}
+      </li>
+    ))}
+  </ul>
+) : (
+  <p className="mt-4 text-red-500">কোন ফলাফল পাওয়া যায়নি।</p>
+)}
+
     </div>
   );
 };
