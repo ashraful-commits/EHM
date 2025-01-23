@@ -1321,7 +1321,7 @@ const UseOfMedicine = () => {
                   <li key={diseaseIndex}> <strong className="border w-auto h-auto p-1 inline-block my-2 rounded border-blue-500 bg-blue-500 text-white text-[10px]">{diseaseIndex + 1}</strong>.{disease}</li>
                 ))}
               </ul>
-              <strong className="text-red-500">মেডিসিন:</strong> {item.medicine}
+              <strong className="text-red-500 bolder mt-5 inline-block font-bolder">মেডিসিন:</strong> <strong className="text-blue-500 bolder mt-5 inline-block font-bolder"> {item.medicine}</strong> 
             </li>
           ))}
         </ul>
