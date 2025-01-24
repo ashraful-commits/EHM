@@ -22,12 +22,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ul className="flex w-full gap-5 text-[10px] items-center bg-blue-600 py-3  max-sm:gap-2 justify-center font-bold">
+        <ul className="flex w-full gap-5 text-[10px] items-center bg-blue-600 py-3 max-sm:flex-col sticky top-0  max-sm:gap-2 justify-center font-bold">
         <li className="text-white-600"><a href="/">মেডিসিন সার্চ করুন</a> </li>
         <li className="text-white-600"><a href="/vashojShoktikorn">ভেষজের শক্তি করণ</a> </li>
         <li className="text-white-600"><a href="/matragiyan">মাত্রা জ্ঞান</a> </li>
         <li className="text-white-600"><a href="/prougbidhi">প্রয়োগ বিধি</a> </li>
         <li className="text-white-600"><a href="/proticriaorugotishoj">প্রতিক্রিয়া ও রোগাতিশয্য</a> </li>
+        <li className="text-white-600"><a href="/oshoderprobhab">ওষুধের প্রভাব শক্তি</a> </li>
       </ul>
         {children}
       </body>
