@@ -1,24 +1,60 @@
+import React from 'react';
 
 export default function OshoderprobhabComp() {
-    return (
-      <div className="p-5">
-        <h1  className="font-bold text-blue-500">ওষুধের প্রভাব শক্তি </h1>
-  
-        <p>। ওষুধের প্রভাব শক্তি ৷৷
-ইলেকট্রো হোমিওপ্যাথির ওষুধ সমূহ ও প্রভাবের ওপর বিশ্লেষণ করে সংযোজক ও অপহ্নৰ অৰ্থাৎ পজেটিভ ও নেগেটিভশক্তির পরিপ্রেক্ষিতে বিভাজন করা হয়েছে
-সংযোজক শান্তির ওমষ (Positive Medicines ) :
-যে ক্ষেত্রে দেহের কোন অবয়ব অপেক্ষাকৃত শ্লথ কিয়াশীল (Hypo- functioning ) সেই ক্ষেত্রে যে ওকালি অবয়বের রিয়াকে সংযোজক শক্তি দ্বারা পূর্ণ' ক্রিয়াশীল করে সেই অধোগুলিকে সংযোজক শক্তির (Positive) ওষুধ বলা হয়। 
-२४
-এস- ল্যাস, এস-১১, এ-১২ এবং লान ও ন ল দ ও গঠল সংযোজক শ্রেণীর ওষুধের মধ্যে পরিগণিত।
-২। অপহৰ শক্তিৰ ও ে(Negetive Medicines ) :
-যে ওয়ারগুলি দেহের কোন অতিক্রিয়াশীল ( Hyper functioning ) অবরবের কার্য ধারাকে ভেষজের অপহৰ শক্তি (Negetive ) গ্যাভাবিক করে সেই বালিকে অপহব শক্তির ওষুধের সংজ্ঞা দেওয়া
-হয় ।
-সি-১৫, সি-১৩, সি-১৭ ডেনেরিডস, ডামি'কাগোস এবং হলদে সঙ্গে তরল-বিদ্যুৎ এই শ্রেণীর অন্তর্গত।
-৩। উভয় বা সমান শক্তির ওষুধে (Neutral Medicine ) :
-যে ক্ষেত্রে দেহের অবয়ব সমূহের উভয়বিধ ক্রিয়াশীলতার সংখাতে কোন বিকৃত লক্ষণ পরিস্ফুট হয় সেই ক্ষেত্রে এই শ্রেণীর ওধগুলি সংস্থিত শক্তিদ্বারা ( equilibrium force) উভয় রিয়াশীল বিশৃংখলার প্রশমনের
-প্রস্তাব আরোপ করে ।
-ফেরিফাগোস, লিমফেটিকোস, স্ট্রোফোলোসো জিয়াপন ( S-10 ) এবং শ্বেত তরল বিদ্যুৎ এই শ্রেণীর ওষুধে ।
-এ ছাড়া ইলেকটো হোমিওপ্যাথির বিপাক ক্রিয়ার বিশিষ্ট ওষুধে স্ট্রোফোলোসোস ও অবয়ব-প্রভাবী (organic) ওষুধে ক্যানসেরাসোস এবং হৃদয় ও রক্ত প্রভাষী যেধে এনজিওটিকোস গুলি ক্রমশঙ্কর পরিপ্রেক্ষিতে উভয় শক্তির প্রভাব প্রকাশ করে, অর্থাৎ উপরোক্ত যে কোন ওষুধের মূলে বটিকা বা নিম্ন ক্রমশক্তির ব্যবহারে অবয়বের ক্লিয়ার আধিক্য দেখা যায়— এক্ষেত্রে ওষুধেটির সংযোজক (Positive) ক্রিয়া সাধিত হয় . অপরদিকে উচ্চ জনশক্তির ব্যবহারে অবয়বের ক্রিয়ার অথতা সাধিত হয় এ ক্ষেত্রে ওপ্রেটির অপহব বা Negetive ক্রিয়া সাধিত হয়। give me list of medincine depend on there qulity</p></div>
-    );
-  }
-  
+  return (
+    <div className="p-5">
+      <h1 className="font-bold text-blue-500 mb-4">ওষুধের প্রভাব শক্তি</h1>
+
+      <p className=" mb-6">
+        ইলেকট্রো হোমিওপ্যাথির ওষুধ সমূহ ও প্রভাবের ওপর বিশ্লেষণ করে সংযোজক ও অপহ্নৰ অৰ্থাৎ পজেটিভ ও নেগেটিভশক্তির পরিপ্রেক্ষিতে বিভাজন করা হয়েছে।
+        <br />
+        <strong>সংযোজক শান্তির ওষুধ (Positive Medicines):</strong> 
+        যে ক্ষেত্রে দেহের কোন অবয়ব অপেক্ষাকৃত শ্লথ কিয়াশীল (Hypo-functioning) সেই ক্ষেত্রে যে ওকালি অবয়বের রিয়াকে সংযোজক শক্তি দ্বারা পূর্ণ' ক্রিয়াশীল করে সেই অধোগুলিকে সংযোজক শক্তির (Positive) ওষুধ বলা হয়। যেমন এস-ল্যাস, এস-১১, এ-১২, লান, এন-ল দ।
+        <br />
+        <strong>অপহ্ন শক্তির ওষুধ (Negative Medicines):</strong> 
+        যে ওষুধগুলি দেহের কোন অতিক্রিয়াশীল (Hyper-functioning) অবরবের কার্যধারাকে ভেষজের অপহর শক্তি (Negative) দ্বারা গ্যাভাবিক করে সেই বালিকগুলিকে অপহর শক্তির ওষুধ বলা হয়। যেমন সি-১৫, সি-১৩, সি-১৭, ডেনেরিডস, ডামিকাগোস, হলদে তরল-বিদ্যুৎ।
+        <br />
+        <strong>উভয় বা সমান শক্তির ওষুধ (Neutral Medicines):</strong> 
+        যে ক্ষেত্রে দেহের অবয়বসমূহের উভয়বিধ ক্রিয়াশীলতার সংখাতে কোন বিকৃত লক্ষণ পরিস্ফুট হয়, সেই ক্ষেত্রে এই শ্রেণীর ওষুধগুলি সমষ্টিগত শক্তি দ্বারা উভয় রিয়াশীল বিশৃংখলার প্রশমনের প্রস্তাব প্রদান করে। যেমন ফেরিফাগোস, লিম্ফেটিকোস, স্ট্রোফোলোসো, জিয়াপন (S-10), শ্বেত তরল বিদ্যুৎ।
+      </p>
+
+      <div className="max-w-4xl mx-auto p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold text-center  mb-6">Electro-Homoeopathy Medicines</h2>
+
+        <table className="min-w-full table-auto border-collapse">
+          <thead>
+            <tr className=" ">
+              <th className="py-2 px-4 text-left">Category</th>
+              <th className="py-2 px-4 text-left">Medicines</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Positive Medicines */}
+            <tr className="">
+              <td className="py-2 px-4 font-medium ">Positive Medicines (সংযোজক শক্তির)</td>
+              <td className="py-2 px-4 ">S-Lass (এস-ল্যাস), S-11 (এস-১১), A-12 (এ-১২), Lan (লান), N-L D (এন-ল দ)</td>
+            </tr>
+
+            {/* Negative Medicines */}
+            <tr className="">
+              <td className="py-2 px-4 font-medium ">Negative Medicines (অপহ্ন শক্তির)</td>
+              <td className="py-2 px-4 ">C-15 (সি-১৫), C-13 (সি-১৩), C-17 (সি-১৭), Deneroids (ডেনেরিডস), Damicagos (ডামিকাগোস), Halde Liquid Electricity (হলদে তরল-বিদ্যুৎ)</td>
+            </tr>
+
+            {/* Neutral Medicines */}
+            <tr className="">
+              <td className="py-2 px-4 font-medium ">Neutral Medicines (উভয় শক্তির)</td>
+              <td className="py-2 px-4 ">Ferephagos (ফেরিফাগোস), Lymphaticos (লিম্ফেটিকোস), Stropholoso (স্ট্রোফোলোসো), Jiapan - S-10 (জিয়াপন - S-10), Shwet Liquid Electricity (শ্বেত তরল বিদ্যুৎ)</td>
+            </tr>
+
+            {/* Special Medicines */}
+            <tr className="">
+              <td className="py-2 px-4 font-medium ">Special Medicines (বিশেষ ওষুধ)</td>
+              <td className="py-2 px-4 ">Cancerosos (ক্যানসেরাসোস), Angioticos (এনজিওটিকোস)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
