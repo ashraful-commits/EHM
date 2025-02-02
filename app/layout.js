@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <li className="text-white-600"><a href="/oshoderprobhab">ওষুধের প্রভাব শক্তি</a> </li>
         <li className="text-white-600"><a href="/oshoderprobhab">ওষুধের প্রভাব শক্তি</a> </li>
         <li className="text-white-600"><a href="/bookofmatariamadica">মেটেরিয়া মেডিকা</a> </li>
+        <li className="text-white-600"><a href="/cikitsha">চিকিৎসা</a> </li>
       </ul>
         {children}
       </body>
